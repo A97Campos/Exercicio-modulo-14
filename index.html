@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+
+    <!--Cabeçalho-->
+   <header class="navbar navbar-expand-lg pt-3 pb-3 fixed-top" id="cabecalho">
+    <div class="container">
+        <a href="#" class="navbar-brand font-rocker">Conexão Cultural</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#meu-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav id="meu-menu" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav nav-pills pt-3 pt-lg-0">
+                <li class="nav-item"><a href="#home" class="nav-link font-rocker ps-2 ">Home</a></li>
+                <li class="nav-item"><a href="#empresa" class="nav-link font-rocker ps-2 ">Nossa Empresa</a></li>
+                <li class="nav-item"><a href="#destinos" class="nav-link font-rocker ps-2 ">Nossos Destinos</a></li>
+                <li class="nav-item"><a href="#contatos" class="nav-link font-rocker ps-2 ">Contatos</a></li>
+            </ul>
+        </nav>
+    </div>
+   </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scrool="true" data-bs-offset="50">
+
+        <!--Seção Home-->
+        <section id="home">
+            <div class="container">
+                <div id="meu-carrosel" class="carousel slide acertar-img-slide">
+
+                    <!--Indicadores-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#meu-carrosel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#meu-carrosel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#meu-carrosel" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!--Carrosel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="assets/imagens/slide/Dublin.jpg" alt="Irlanda" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Irlanda</h3>
+                                <p>Dublin</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="assets/imagens/slide/rio-de-janeiro-809756_1920.jpg" alt="Rio de Janeiro" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Brasil</h3>
+                                <p>Rio de Janeiro</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="assets/imagens/slide/dubai-4044183_1920.jpg" alt="Dubai" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>Emirados Árabes Unidos</h3>
+                                <p>Dubai</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Setas direita e esquerda-->
+                        <button type="button" class="carousel-control-prev" data-bs-target="#meu-carrosel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-target="#meu-carrosel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Seção Nossa empresa-->
+        <section id="empresa">
+            <div class="container">
+                <div>
+                    <h2 class="text-center pt-5 pb-5 font-rocker">Nossa Empresa</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="font-rocker">Conexão Cultural</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae itaque quod vel cupiditate esse repellendus? Maiores rem ullam earum possimus, nemo dolore facere. Velit suscipit eveniet placeat quasi, adipisci cupiditate.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorem numquam, atque libero quis reprehenderit assumenda voluptatibus quibusdam, unde ducimus molestias odit veritatis impedit quam. Veniam, incidunt. Sed, aperiam exercitationem.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/imagens/Loja/shops-5992277_640.jpg" alt="Loja" >
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!--Seção nossos destinos-->
+        <section id="destinos">
+            <div class="back-color pb-5">
+                <div class="container">
+                    <div>
+                        <h2 class="text-center font-rocker txt-color pt-5 pb-5">Nossos Destinos</h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2 mb-4 mb-md-0">
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item"><a href="#brasil" class="nav-link active" data-bs-toggle="pill">Brasil</a></li>
+                                <li class="nav-item"><a href="#canada" class="nav-link" data-bs-toggle="pill">Canadá</a></li>
+                                <li class="nav-item"><a href="#emirados" class="nav-link" data-bs-toggle="pill">Emirados Árabes</a></li>
+                                <li class="nav-item"><a href="#irlanda" class="nav-link" data-bs-toggle="pill">Irlanda</a></li>
+                            </ul>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div id="brasil" class="tab-pane active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Brasil/Rio de Janeiro.jpg" alt="Rio de Janeiro" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Rio de Janeiro</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Brasil/Salvador.jpg" alt="Salvador" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Salvador</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Brasil/São Paulo.jpg" alt="São Paulo" class="d-block w-100">
+                                            <h3  class="txt-color pt-2">São Paulo</h3>
+                                            <p  class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="canada" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Canadá/Montreal.jpg" alt="Montreal" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Montreal</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Canadá/Toronto.jpg" alt="Toronto" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Toronto</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Canadá/Vancouver.jpg" alt="Vancouver" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Vancouver</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="emirados" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Emirados Árabes/dubai-977368_1920.jpg" alt="Dubai" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Dubai</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="irlanda" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Irlanda/Cork.jpg" alt="Cork" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Cork</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Irlanda/Dublin.jpg" alt="Dublin" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Dublin</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Irlanda/Galway.jpg" alt="Galway" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Galway</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="assets/imagens/Irlanda/Limerick.jpg" alt="Limerick" class="d-block w-100">
+                                            <h3 class="txt-color pt-2">Limerick</h3>
+                                            <p class="txt-color">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seção Contatos-->
+        <section id="contatos">
+            <div class="container">
+                <div>
+                    <h2 class="text-center font-rocker pt-5 pb-5">Contatos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="pt-3 pb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="pb-3">
+                                <label for="tel">Telefone:</label>
+                                <input type="tel" id="tel" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="mensagem">Digite sua Mensagem:</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn mb-3 mb-md-0">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3 class="pb-2 pb-md-0">Onde nos Encontrar</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.403040459098!2d-43.21313377856552!3d-22.9519239119813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1695227682558!5m2!1spt-BR!2sbr" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="pt-3 pt-md-0">Nossas Redes</h3>
+                                <a href="#"><i class="bi bi-facebook color-icon"></i></a>
+                                <a href="#"><i class="bi bi-instagram color-icon ps-2 pe-2"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x color-icon"></i></a>
+                                <a href="#"><i class="bi bi-youtube color-icon ps-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-5 mb-0 pt-2 pb-2">
+            <div class="container">
+                <p class="m-0">Desenvolvido por <a href="https://www.linkedin.com/in/andrewcamposleandro/" target="_blank" class="navbar-brand fw-bold">Andrew Campos</a> no curso Full Stack Python da Ebac.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+</html>

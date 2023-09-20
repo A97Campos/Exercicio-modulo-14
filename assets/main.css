@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=New+Rocker&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.font-rocker{
+    font-family: 'New Rocker', cursive;
+}
+
+.nav-item .nav-link.active {
+    background-color: #fff;
+    color: #008080;
+}
+
+.nav-item .nav-link:hover, .navbar-brand:hover {
+    color: #dbd9d9;
+}
+
+.txt-color {
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #008080;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.396);
+}
+
+.nav-link, .navbar-brand {
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Destaques */
+
+.acertar-img-slide {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding-top: 70px;
+}
+
+/* Empresa */
+
+#empresa img {
+    width: 100%;
+}
+
+/* Destinos */
+#destinos{
+    margin-top: 50px;
+}
+
+.back-color {
+    background-color: #008080;
+}
+
+/* Contatos */
+#contatos button {
+    background-color: #008080;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.color-icon {
+    color: #008080;
+}
+
+/* footer */
+
+footer {
+    background-color: #008080;
+    color: #fff;
+}
